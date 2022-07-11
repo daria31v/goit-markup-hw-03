@@ -10,7 +10,7 @@
   --main-text: #757575;
   --hover-focus-btn: #188ce8;
 }
-/* общий стиль для двух страниц */
+/* общее для двух страниц */
 body {
   font-family: 'Roboto', sans-serif;
   color: var(--primery-text-color);
@@ -46,6 +46,33 @@ body {
 .list-link.header:active {
   color: var(--accent-bgr-btn-color);
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+/* HEADER */
+.header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+.header.container {
+  display: flex;
+  align-items: center;
+}
+
 /* стиль для логотипов */
 .logo-link {
   font-family: 'Raleway', sans-serif;
