@@ -19,6 +19,23 @@ body {
   line-height: 1.14;
   letter-spacing: 0.03em;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
 .list {
   list-style: none;
 }
@@ -40,41 +57,54 @@ body {
 .list-link.header {
   color: var(--main-text);
   font-weight: 500;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  display: block;
 }
 .list-link.header:hover,
 .list-link.header:focus,
 .list-link.header:active {
   color: var(--accent-bgr-btn-color);
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ul {
-  margin: 0;
-  padding: 0;
-}
-.container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
-}
+
 /* HEADER */
 .header {
   padding-top: 24px;
   padding-bottom: 25px;
+  display: flex;
 }
-.header.container {
+.container-list {
   display: flex;
   align-items: center;
 }
+.header.list {
+  display: flex;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+  margin-right: 50px;
+}
+.header-nav:last-child {
+  margin-right: 0;
+}
+.header-contact {
+  display: flex;
+  align-items: center;
+  margin-left: 93px;
+}
+.header-contact-list .list-link.header + .list-link.header {
+  margin-left: 50px;
+}
 
 /* стиль для логотипов */
+.container-logo {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
 .logo-link {
+  align-items: center;
   font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -84,6 +114,7 @@ ul {
   color: #2196f3;
   text-decoration: none;
 }
+
 .logo-accent {
   color: var(--primery-text-color);
 }
@@ -143,6 +174,8 @@ ul {
 /* герой */
 .section-hero {
   background-color: var(--hero-footer-bgr-color);
+}
+.container.hero {
 }
 .hero-title {
   font-size: 44px;

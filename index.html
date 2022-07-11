@@ -20,30 +20,41 @@
     />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
-  <header class="header">
-    <div class="container header">
+  <header class="container header">
+    <div class="container-logo">
       <a class="logo-link" href="" lang="en">Web<span class="logo-accent">Studio</span></a>
-      <nav>
-        <ul class="list">
-          <li><a href="./index.html" target="_self" class="list-link current">Студия</a></li>
-          <li><a href="./portfolio.html" target="_self" class="list-link header">Портфолио</a></li>
-          <li>
-            <a href="/*Активная_ссылка*/" target="_blank" class="list-link header">Контакты</a>
-          </li>
-        </ul>
-      </nav>
-      <ul class="list">
-        <li>
+    </div>
+
+    <nav class="container-list">
+      <ul class="header list">
+        <li class="header-nav">
+          <a href="./index.html" target="_self" class="list-link current">Студия</a>
+        </li>
+        <li class="header-nav">
+          <a href="./portfolio.html" target="_self" class="list-link header">Портфолио</a>
+        </li>
+        <li class="header-nav">
+          <a href="/*Активная_ссылка*/" target="_blank" class="list-link header">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="header-contact">
+      <ul class="list header-contact">
+        <li class="header-contact-list">
           <a href="mailto:infi@example.com" class="list-link header">info@devstudio.com</a>
         </li>
-        <li><a href="tel:+380991111111" class="list-link header">+38 099 111 11 11</a></li>
+        <li class="header-contact-list">
+          <a href="tel:+380991111111" class="list-link header">+38 099 111 11 11</a>
+        </li>
       </ul>
     </div>
   </header>
-  <main class="main-bgr">
+
+  <main>
     <!--герой - Основные разделы-->
     <section class="section-hero">
-      <div class="container">
+      <div class="container hero">
         <!--Шапка-->
         <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
         <button type="button" class="button hero">Заказать услугу</button>
