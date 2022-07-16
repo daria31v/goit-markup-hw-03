@@ -63,6 +63,7 @@ img {
   padding-top: 24px;
   padding-bottom: 25px;
   display: block;
+  margin-right:30px;
 }
 .list-link.header:hover,
 .list-link.header:focus,
@@ -131,6 +132,7 @@ img {
   font-family: inherit;
   background-color: var(--bgr-button-secondary);
   cursor: pointer;
+  padding: 6px 22px;
 }
 .button:hover,
 .button:focus {
@@ -164,37 +166,38 @@ img {
 }
 .button.secondary {
   font-weight: 500;
+
 }
 /* стили для подвалов обоих страниц */
 /* FOOTER */
 .footer {
   background-color: var(--hero-footer-bgr-color);
   padding-top: 60px;
-  padding-bottom: 60px;
+  
 }
 .container.footer {
-  
+  padding-bottom: 60px;
 }
 .logo-link.footer{
-  
+  margin-bottom: 20px;
+  display: block;
 }
 .footer-address {
   color: var(--white-color);
   font-style: normal;
-  padding-top: 20px;
-  padding-bottom: 9px;
-}
-.list{
-  padding-top: 9px;
-  padding-bottom: 9px;
+  margin-bottom: 9px;
 }
 .footer-link {
   color: var(--footer-text-color);
-  margin-bottom: 9px;
+
 }
 .footer-link:hover,
 .footer-link:focus {
   color: var(--white-color);
+}
+.footer-item:not(:last-child){
+  display: block;
+  margin-bottom: 9px;
 }
 
 
@@ -310,6 +313,24 @@ img {
 }
 
 /* СТИЛИ ДЛЯ СТРАНИЦЫ ПОРТФОЛИО */
+.section-work{
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.container.work{
+
+}
+.list.filter{
+display: flex;
+justify-content: center;
+gap: 8px;
+margin-bottom: 50px;
+}
+.list.project{
+display: flex;
+flex-wrap: wrap;
+gap: 30px;
+}
 .work-title {
   font-weight: 700;
   font-size: 18px;
