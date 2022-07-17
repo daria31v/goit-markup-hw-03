@@ -57,14 +57,17 @@ img {
   color: var(--accent-bgr-btn-color);
   text-transform: none;
   font-weight: 500;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  
 }
 .list-link.header {
+  display: block;
   color: var(--main-text);
   font-weight: 500;
-  padding-top: 24px;
-  padding-bottom: 25px;
-  display: block;
-  margin-right:30px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  
 }
 .list-link.header:hover,
 .list-link.header:focus,
@@ -77,9 +80,13 @@ div{
 
 /* HEADER */
 .header {
-  padding-top: 24px;
-  padding-bottom: 25px;
+display: flex;
+
+align-items: center;
+}
+.container.header{
   display: flex;
+ border-bottom: 1px solid #ECECEC;
 }
 .container-list {
   display: flex;
@@ -87,11 +94,11 @@ div{
 }
 .header.list {
   display: flex;
+  margin-left: auto;
 }
 .header-nav {
-  display: flex;
-  align-items: center;
   margin-right: 50px;
+  display: block;
 }
 .header-nav:last-child {
   margin-right: 0;
@@ -99,20 +106,23 @@ div{
 .header-contact {
   display: flex;
   align-items: center;
-  margin-left: 93px;
+  margin-left: auto;
 }
-.header-contact-list .list-link.header + .list-link.header {
-  margin-left: 50px;
+.list.header-contact{
+ display: flex; 
+ 
+}
+.header-contact-item {
+  margin-right: 50px;
+}
+.header-contact-item:last-child{
+  margin-right: 0;
+
 }
 
 /* стиль для логотипов */
-.container-logo {
-  display: flex;
-  align-items: center;
-  margin-right: auto;
-}
 .logo-link {
-  align-items: center;
+  margin-right: 93px;
   font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: 700;
