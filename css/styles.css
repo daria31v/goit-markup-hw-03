@@ -168,6 +168,7 @@ align-items: center;
   margin-top: 30px;
   margin-left: auto
   margin-right: auto;
+  
 }
 .button.hero:hover,
 .button.hero:focus {
@@ -218,24 +219,20 @@ align-items: center;
   background-color: var(--hero-footer-bgr-color);
   padding-top: 200px;
   padding-bottom: 200px;
-  padding-left: 452px;
-  padding-right: 452px;
   text-align: center;
-}
-.container.hero {
-  width: 696px;
-  margin: auto;
-  margin-bottom: 30px;
 }
 .hero-title {
   font-size: 44px;
+  width: 696px;
   color: #ffffff;
   line-height: 1.36;
   text-transform: uppercase;
   font-weight: 900;
   text-align: center;
   letter-spacing: 0.06em;
-}
+  margin-left: auto;
+  margin-right: auto;
+ }
 /* features */
 .section-features{
  padding-top: 94px;
