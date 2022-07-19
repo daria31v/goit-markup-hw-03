@@ -80,21 +80,20 @@ div{
 
 /* HEADER */
 .header {
-display: flex;
-
-align-items: center;
+border-bottom: 1px solid #ECECEC;
 }
 .container.header{
   display: flex;
- border-bottom: 1px solid #ECECEC;
+ display: flex;
+ align-items: center;
 }
 .container-list {
-  display: flex;
-  align-items: center;
+ 
 }
 .header.list {
   display: flex;
   margin-left: auto;
+  align-items: center;
 }
 .header-nav {
   margin-right: 50px;
@@ -104,13 +103,12 @@ align-items: center;
   margin-right: 0;
 }
 .header-contact {
-  display: flex;
-  align-items: center;
-  margin-left: auto;
+  
 }
 .list.header-contact{
  display: flex; 
- 
+ align-items: center;
+  margin-left: auto;
 }
 .header-contact-item {
   margin-right: 50px;
@@ -186,19 +184,21 @@ align-items: center;
 /* FOOTER */
 .footer {
   background-color: var(--hero-footer-bgr-color);
-}
-.container.footer {
+  padding-top: 60px;
   padding-bottom: 60px;
 }
+
 .logo-link.footer{
   margin-bottom: 20px;
   display: block;
-  padding-top: 60px;
+  margin-right: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 .footer-address {
-  color: var(--white-color);
   font-style: normal;
   margin-bottom: 9px;
+  color: var(--white-color);
 }
 .footer-link {
   color: var(--footer-text-color);
@@ -211,6 +211,9 @@ align-items: center;
 .footer-item:not(:last-child){
   display: block;
   margin-bottom: 9px;
+}
+.footer-list{
+  margin-top: 9px;
 }
 
 /* СТИЛИ ДЛЯ СТРАНИЦЫ СТУДИЯ */
